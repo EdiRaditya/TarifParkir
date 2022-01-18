@@ -1,0 +1,152 @@
+NAMA : I KOMANG EDI RADITYA
+NIM: 2101010051
+PRODI: SISTEM INFORMASI(MALAM)
+MATA KULIAH: DASAR-DASAR PEMROGRAMAN
+
+
+1. TIPE DATA PEMROGRAMAN C++ YAITU :
+
+ 1. Void (Kosong)
+ adalah tipe data yang tidak bertipe karena mempunyai ukuran 0 byte biasanya digunakan untuk tipe data kosong seperti membuat fungsi. 
+ 2. Char (karakter)
+ adalah tipe data untuk karakter yang sering digunakan untuk tipe data yang menggunakan huruf dan angka sebagai datanya.
+ 3. Int (Integer)
+ adalah tipe data untuk numerik yang sering digunakan untuk data berupa angka. 
+ 4. Float (Floating Point) 
+ adalah tipe data untuk numerik yang digunakan untuk data berupa angka pecahan
+ 5. Double (Double Floating Point)
+ adalah tipe data untuk numerik yang digunakan untuk data berupa angka pecahan yang nilai decimalnya dua kali lebih banyak.
+ 6. Bool (Boolean)
+ adalah tipe data yang digunakan untuk menentukan false dan true, tipe data ini sama seperti bilangan biner hanya ada dua angka saja yaitu 0 dan 1.
+ 7.String
+ adalah tipe data untuk kumpulan karakter.
+ 8.Array
+ adalah tipe data untuk kumpulan tipe data lain yang sejenisnya.
+
+
+
+
+2.Menghitung volume balok
+ 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    
+    int p,l,t;
+    cout<<"menghitung volume balok"<< endl;
+    
+    cout<<"masukan panjang balok : ";
+    cin>>p;
+   
+    cout<<"masukan lebar balok : ";
+    cin>>l;
+  
+    cout<<"masukan tinggi balok : ";
+    cin>>t;
+    
+    cout<<p*l*t;
+
+    return 0;
+}
+
+
+3. Menghitung nilai rata-rata mahasiswa
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    
+    int uts,uas,tugas;
+    cout<<"menghitung rata-rata"<< endl;
+    
+    cout<<"masukan nilai uts : ";
+    cin>>uts;
+   
+    cout<<"masukan nilai uas : ";
+    cin>>uas;
+  
+    cout<<"masukan nilai tugas : ";
+    cin>>tugas;
+    
+    cout<<(uts+uas+tugas)/3;
+    
+    
+    return 0;
+}
+
+
+
+
+4. menginput data
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+      
+ 
+    
+  int nilai [3][3];
+    string nama_nilai[3] = { "uts" , "uas" , "tugas" };
+    string nama[3];
+    for (int a=0; a<3; a++ ){
+    cout << "masukan Nilai milik " << endl;
+    cin>>nama[a];
+    for (int b=0; b<3; b++){
+    cout << "nilai " << nama_nilai[b] << endl;
+    cin >> nilai [a][b];
+ }
+ }
+    for (int a=0; a<3; a++){
+    cout << "nilai "<< nama[a] << endl;
+    for (int b=0; b<3; b++){
+    cout << nama_nilai[b]<<"  "<< nilai [a][b] <<  " || ";
+}
+    cout << endl;
+}
+    return 0;
+}
+
+
+
+5.  #include <iostream>
+
+using namespace std;
+
+int main()
+{
+      
+      
+ int bil[7], k, l, m, temp;
+    for (k=1; k<=6; k++){
+    cout << "Bilangan ke ( "<< k <<" ) : ";
+    cin >> bil[k];
+    }
+    cout << "Hasil pengurutan bilangan : " << endl;
+    for (l=1; m<=6; m++){
+    for (m=1; m<=6; m++){
+    if (bil[l] < bil[m]){
+    temp = bil[m];
+    bil[l] = bil[m];
+    bil[m] = temp;
+    }
+    }
+    }
+    for (m=1; m<=6; m++){
+    cout << bil[l] << ", ";
+    }
+
+
+    return 0;
+}
